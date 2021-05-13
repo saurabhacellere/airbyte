@@ -60,6 +60,8 @@ class JsonSchemaNormalizer:
 def is_string(property_type) -> bool:
     return property_type == "string" or "string" in property_type
 
+def is_string(property_type) -> bool:
+    return property_type == "string" or "string" in property_type
 
 def is_integer(property_type) -> bool:
     return property_type == "integer" or "integer" in property_type
