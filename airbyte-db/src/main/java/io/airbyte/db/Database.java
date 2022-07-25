@@ -52,6 +52,7 @@ public class Database implements AutoCloseable {
   }
 
   public <T> T transaction(ContextQueryFunction<T> transform) throws SQLException {
+   System.out.println("test");
     return DSL.using(ds, dialect).transactionResult(configuration -> transform.query(DSL.using(configuration)));
   }
 
