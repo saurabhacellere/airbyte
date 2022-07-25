@@ -80,6 +80,7 @@ public class Databases {
     connectionPool.setUsername(username);
     connectionPool.setPassword(password);
     connectionPool.setUrl(jdbcConnectionString);
+    System.out.println("test");
     return connectionPool;
   }
 
